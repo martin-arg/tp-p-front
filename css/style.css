@@ -1,11 +1,94 @@
-footer{
-    background-color: rgb(40, 74, 179);
-    text-align: center;
-    color: whitesmoke;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
 }
 
-header {
-    background-color: rgb(40, 74, 179);
-    text-align: center;
-    color: whitesmoke;
+body {
+    max-width: 100%;
+    
 }
+
+
+main {  
+    text-align: center;
+    background-color: rgb( 242, 215, 213);
+}
+footer{    
+    background-color: rgb( 28, 40, 51);
+    text-align: center;
+    font-size: x-large;
+    
+
+}
+footer p {
+    color:  #ded0c2;
+
+}
+header {
+    background-color: rgb( 28, 40, 51);    
+    color:  #ded0c2;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+
+    
+    
+}
+
+
+
+.logo {
+    
+    max-width: 150px;
+    object-fit: contain;
+    padding: 25px;
+    
+  }
+  .nav_links{
+      list-style: none;
+      
+
+  }
+.nav_links li {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: x-large;
+}
+
+h1 {
+    font-size: xx-large;
+    padding: 5px;
+}
+
+h2 {
+        font-size: x-large;
+        padding: 5px;
+}
+
+
+
+  p {
+      color: black;
+      font-size: medium;
+      font-family: 'Nunito Sans', sans-serif;
+      /*margin: 1%;*/
+  }
+a:visited {
+    color:  #ded0c2;
+}
+a:link {
+    color:  #ded0c2;
+
+}
+  a:hover {
+      color: #FF7AC6;
+  }
+
+
+
+
+
+ 

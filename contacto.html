@@ -8,34 +8,61 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>        
-        <h1 style="text-align: center;"  >Centro Cultural</i></h1>
+    <header>
+        <img class="logo" src="./img/icono.svg" >
         <nav>
-            <a href="index.html">
-                <i class="fa-solid fa-beer-mug-empty fa-2xl" title="prueba"></i>
-            </a>
-            
-            <a href="index.html">Home</a>
-            <a href="actividades.html">Actividades</a>
-            <a href="instalaciones.html">Instalaciones</a>
-            <a href="contacto.html">Contactenos</a>            
+                
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="contacto.html">Contactenos</a></li>
+            </ul>
         </nav>
-        <br>
+        
+    
     </header>
     <main>
         <h1>contactanos</h1>
+        <section>
+            <form method="post">
+                <div>
+          
+              <label for="fname">Nombre</label>
+              <input type="text" id="fname" name="Nombre" placeholder="Su nombre..">
+          
+              <label for="lname">Apellido</label>
+              <input type="text" id="lname" name="Apellido" placeholder="Su Apellido..">
+                </div>
+                <div>
+                    <div>
+                        <label for="cliEmail">Email</label>
+                        <input type="email" class="form-control" id="cliEmail" name="cliEmail" >
+                    </div>
+            
+                    <div>
+                        <label for="cliTelefono">Telefono</label>
+                        <input type="text" class="form-control" id="cliTelefono" name="cliTelefono">
+                    </div>
 
+                </div>
+
+                <div>
+              <label for="subject">Mensaje</label>
+              <textarea id="subject" name="subject" placeholder="Escriba su Mensaje" style="height:200px"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Submit">
+            </div>
+            </form>
+        </section> 
 
     </main>
     <footer>
         <br>
         <nav >
-            <a href="https://www.facebook.com">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com">
-                <i class="fa-brands fa-twitter "></i>
-            </a>
+            
+            
         </nav>
         <p >Derechos reservados 2022</p>
        <br> 
