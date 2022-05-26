@@ -6,8 +6,7 @@
 }
 
 body {
-    max-width: 100%;
-    
+    max-width: 100%;    
 }
 
 
@@ -68,7 +67,11 @@ h2 {
         padding: 5px;
 }
 
-
+.actividades{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
   p {
       color: black;
@@ -90,5 +93,40 @@ a:link {
 
 
 
+  .card {
+    /* Add shadows to create the "card" effect */
+    margin: 1vw;
 
- 
+  }
+  
+  .card img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    height: max(10rem, 25vh);
+    max-height: max(10rem, 30vh);
+    aspect-ratio: 4/3;
+    mix-blend-mode: var(--card-blend-mode);
+    
+
+  }
+
+
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .cardContenido {
+    padding: 2px 16px;
+  }
+ /* Media queries breakpoints*/
+
+ /*
+ hasta 600px
+ desde 768px
+ desde 1200px
+ */
+
