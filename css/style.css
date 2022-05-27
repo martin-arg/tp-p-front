@@ -1,8 +1,8 @@
-
+/* Mobile First */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    /*box-sizing: border-box;    */
 }
 
 body {
@@ -13,6 +13,7 @@ body {
 main {  
     text-align: center;
     background-color: rgb( 242, 215, 213);
+    padding-bottom: 5vw;
     
 }
 main img {
@@ -22,6 +23,7 @@ footer{
     background-color: rgb( 28, 40, 51);
     text-align: center;
     font-size: x-large;
+   
     
 
 }
@@ -59,7 +61,8 @@ header {
 
 h1 {
     
-    padding: 5px;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
 
 }
 
@@ -79,7 +82,7 @@ h2 {
       color: black;
       font-size: medium;
       font-family: 'Nunito Sans', sans-serif;
-      
+      line-height: 6vw;      
       /*margin: 1%;*/
   }
 a:visited {
@@ -130,17 +133,10 @@ a:link {
     padding: 2px 16px;
   }
  /* Media queries breakpoints*/
-
- /*
- hasta 600px
- desde 600px
- desde 1200px
- */
-
- @media only screen and (max-width: 600px) { }
+ 
  @media only screen and (min-width: 600px) {
     .card {
-        /* Add shadows to create the "card" effect */
+        
        
         background-color: black;
         max-width: 1vw;
@@ -149,25 +145,47 @@ a:link {
   }
  @media only screen and (min-width: 1200px) { 
     main {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
         text-align: center;
     }
-    .card {
-        /* Add shadows to create the "card" effect */
-       
-        background-color: red;
+
+    main img {
+        max-width: 75%;
+
+    }
+    main > section {
+      max-width: 75%;
+    }
+
+    .actividades{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         max-width: fit-content;
+    }
+    .card {
+        
+        background-color: red;
+        max-width: 33%;
       }
 
       h1 {
           font-size: 5vw;
+          width: 100%;
           
 
       }
       h2 {
         font-size: 3vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        width: 100%;
       }
     p {
-        
+        line-height: 3vw;      
         font-size: 2vw;
         /*max-width: 75%;*/
     }
