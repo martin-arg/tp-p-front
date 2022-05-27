@@ -6,53 +6,59 @@
 }
 
 body {
-    max-width: 100%;    
+    max-width: 100%;
 }
 
 
-main {  
+main {
     text-align: center;
-    background-color: rgb( 242, 215, 213);
+    background-color: rgb(242, 215, 213);
     padding-bottom: 5vw;
-    
+
 }
+
 main img {
     max-width: 100%;
 }
-footer{    
-    background-color: rgb( 28, 40, 51);
+
+footer {
+    background-color: rgb(28, 40, 51);
     text-align: center;
     font-size: x-large;
-   
-    
+
+
 
 }
+
 footer p {
-    color:  #ded0c2;
+    color: #ded0c2;
 
 }
+
 header {
-    background-color: rgb( 28, 40, 51);    
-    color:  #ded0c2;
+    background-color: rgb(28, 40, 51);
+    color: #ded0c2;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
 
 
 .logo {
-    
+
     max-width: 150px;
     object-fit: contain;
     padding: 25px;
-    
-  }
-  .nav_links{
-      list-style: none;
-      
 
-  }
+}
+
+.nav_links {
+    list-style: none;
+
+
+}
+
 .nav_links li {
     display: inline-block;
     padding: 0px 10px;
@@ -60,95 +66,160 @@ header {
 }
 
 h1 {
-    
+
     margin-top: 2vw;
     margin-bottom: 5vw;
 
 }
 
 h2 {
-    
-        padding: 5px;
+
+    padding: 5px;
 }
 
-.actividades{
+.actividades {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 100%;
 }
 
-  p {
-      color: black;
-      font-size: medium;
-      font-family: 'Nunito Sans', sans-serif;
-      line-height: 6vw;      
-      /*margin: 1%;*/
-  }
+p {
+    color: black;
+    font-size: medium;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 6vw;
+    /*margin: 1%;*/
+}
+
 a:visited {
-    color:  #ded0c2;
+    color: #ded0c2;
 }
+
 a:link {
-    color:  #ded0c2;
+    color: #ded0c2;
 
 }
-  a:hover {
-      color: #FF7AC6;
-  }
+
+a:hover {
+    color: #FF7AC6;
+}
 
 
 
 
-  .card {
+.card {
     /* Add shadows to create the "card" effect */
     margin: 1vw;
     background-color: white;
     max-width: 65vw;
 
-  }
-  
-  .card img {
+}
+
+.card img {
     border-radius: 0.5rem 0.5rem 0 0;
-    
-    
+
+
     width: 100%;
     object-fit: cover;
     height: max(10rem, 25vh);
     max-height: max(10rem, 30vh);
     aspect-ratio: 4/3;
     mix-blend-mode: var(--card-blend-mode);
-    
-
-  }
 
 
+}
 
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .cardContenido {
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.cardContenido {
     padding: 2px 16px;
-  }
- /* Media queries breakpoints*/
- 
- @media only screen and (min-width: 600px) {
-    .card {
-        
-       
-        background-color: black;
-        max-width: 1vw;
-    
-      }
-  }
- @media only screen and (min-width: 1200px) { 
+}
+
+/* Media queries breakpoints*/
+
+@media only screen and (min-width: 600px) {
     main {
-        
+
         display: flex;
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    main img {
+        max-width: 100%;
+
+    }
+
+    main>section {
+        max-width: 75%;
+    }
+
+    .actividades {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 100%;
+    }
+
+    .card {
+
+        background-color: white;
+        max-width: 200px;
+        max-height: auto;
+    }
+
+    .card img {
+        max-height: auto;
+        max-width: auto;
+        object-fit: cover;
+        
+    }
+    
+
+    .card h4 {
+        font-size: large;
+
+    }
+    .card p {
+        font-size: small;
+        
+    }
+
+    h1 {
+        font-size: 5vw;
+        width: 100%;
+
+
+    }
+
+    h2 {
+        font-size: 3vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        width: 100%;
+    }
+
+    p {
+        line-height: 3vw;
+        font-size: 2vw;
+        /*max-width: 75%;*/
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         text-align: center;
     }
 
@@ -156,37 +227,59 @@ a:link {
         max-width: 75%;
 
     }
-    main > section {
-      max-width: 75%;
+
+    main>section {
+        max-width: 75%;
     }
 
-    .actividades{
-        display: inline-flex;
+    .actividades {
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        max-width: fit-content;
+        max-width: 100%;
     }
+
     .card {
+
+        background-color: white;
+        max-width: 250px;
+        max-height: auto;
+    }
+
+    .card img {
+        max-height: 250px;
+        max-width: 250px;
+        object-fit: cover;
         
-        background-color: red;
-        max-width: 33%;
-      }
+    }
+    
 
-      h1 {
-          font-size: 5vw;
-          width: 100%;
-          
+    .card h4 {
+        font-size: large;
 
-      }
-      h2 {
+    }
+    .card p {
+        font-size: small;
+        
+    }
+
+    h1 {
+        font-size: 5vw;
+        width: 100%;
+
+
+    }
+
+    h2 {
         font-size: 3vw;
         margin-top: 3vw;
         margin-bottom: 3vw;
         width: 100%;
-      }
+    }
+
     p {
-        line-height: 3vw;      
+        line-height: 3vw;
         font-size: 2vw;
         /*max-width: 75%;*/
     }
-  }
+}
