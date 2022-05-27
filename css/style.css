@@ -105,9 +105,26 @@ a:hover {
     color: #FF7AC6;
 }
 
+.formulario{
+    width: 80%;
+    display: flex;
+    justify-content: center;
 
+}
+.datos {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2vw;
+    
+}
+label {
+   padding-right: 2vw;
 
+}
 
+input textarea {
+width: 100px;
+}
 .card {
     /* Add shadows to create the "card" effect */
     margin: 1vw;
@@ -117,16 +134,8 @@ a:hover {
 }
 
 .card img {
-    border-radius: 0.5rem 0.5rem 0 0;
-
-
     width: 100%;
-    object-fit: cover;
-    height: max(10rem, 25vh);
-    max-height: max(10rem, 30vh);
-    aspect-ratio: 4/3;
-    mix-blend-mode: var(--card-blend-mode);
-
+    object-fit: scale-down;   
 
 }
 
@@ -158,7 +167,7 @@ a:hover {
 
     }
 
-    main>section {
+    main > section {
         max-width: 75%;
     }
 
@@ -166,30 +175,36 @@ a:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        max-width: 100%;
+        width: 100%;
     }
 
     .card {
 
         background-color: white;
-        max-width: 200px;
-        max-height: auto;
+        width: 20vw;
+        height: auto;
+        
     }
 
     .card img {
-        max-height: auto;
-        max-width: auto;
-        object-fit: cover;
-        
+        height: auto;
+        max-width: 100%;
+        object-fit: scale-down;
+
     }
-    
+
 
     .card h4 {
         font-size: large;
 
     }
+
+
     .card p {
-        font-size: small;
+        font-size: x-small;
+        line-height: 2vw;
+        max-width: 100%;
+        
         
     }
 
@@ -205,12 +220,13 @@ a:hover {
         margin-top: 3vw;
         margin-bottom: 3vw;
         width: 100%;
+        
     }
 
     p {
         line-height: 3vw;
-        font-size: 2vw;
-        /*max-width: 75%;*/
+        font-size: 2vw;     
+        
     }
 }
 
@@ -250,17 +266,18 @@ a:hover {
         max-height: 250px;
         max-width: 250px;
         object-fit: cover;
-        
+
     }
-    
+
 
     .card h4 {
         font-size: large;
 
     }
+
     .card p {
         font-size: small;
-        
+
     }
 
     h1 {
