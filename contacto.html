@@ -25,31 +25,31 @@
     <main>
         <h1>contactanos</h1>
         <section>
-            <form method="post">
+            <form action="#" method="post" onsubmit="return validar();">
                 <div>
           
-              <label for="fname">Nombre</label>
-              <input type="text" id="fname" name="Nombre" placeholder="Su nombre..">
-          
-              <label for="lname">Apellido</label>
-              <input type="text" id="lname" name="Apellido" placeholder="Su Apellido..">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="Nombre">
+           
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="Apellido">
                 </div>
                 <div>
                     <div>
-                        <label for="cliEmail">Email</label>
-                        <input type="email" class="form-control" id="cliEmail" name="cliEmail" >
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" >
                     </div>
             
                     <div>
-                        <label for="cliTelefono">Telefono</label>
-                        <input type="text" class="form-control" id="cliTelefono" name="cliTelefono">
+                        <label for="telefono">Telefono</label>
+                        <input type="text" id="telefono" name="telefono">
                     </div>
 
                 </div>
 
                 <div>
-              <label for="subject">Mensaje</label>
-              <textarea id="subject" name="subject" placeholder="Escriba su Mensaje" style="height:200px"></textarea>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Escriba su Mensaje" style="height:200px"></textarea>
             </div>
             <div>
               <input type="submit" value="Submit">

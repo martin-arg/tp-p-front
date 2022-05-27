@@ -13,6 +13,7 @@ body {
 main {  
     text-align: center;
     background-color: rgb( 242, 215, 213);
+    
 }
 main img {
     max-width: 100%;
@@ -34,10 +35,6 @@ header {
     display: flex;
     justify-content:center;
     align-items: center;
-    
-
-    
-    
 }
 
 
@@ -61,12 +58,13 @@ header {
 }
 
 h1 {
-    font-size: xx-large;
+    
     padding: 5px;
+
 }
 
 h2 {
-        font-size: x-large;
+    
         padding: 5px;
 }
 
@@ -74,12 +72,14 @@ h2 {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 100%;
 }
 
   p {
       color: black;
       font-size: medium;
       font-family: 'Nunito Sans', sans-serif;
+      
       /*margin: 1%;*/
   }
 a:visited {
@@ -99,11 +99,15 @@ a:link {
   .card {
     /* Add shadows to create the "card" effect */
     margin: 1vw;
+    background-color: white;
+    max-width: 65vw;
 
   }
   
   .card img {
     border-radius: 0.5rem 0.5rem 0 0;
+    
+    
     width: 100%;
     object-fit: cover;
     height: max(10rem, 25vh);
@@ -129,7 +133,42 @@ a:link {
 
  /*
  hasta 600px
- desde 768px
+ desde 600px
  desde 1200px
  */
 
+ @media only screen and (max-width: 600px) { }
+ @media only screen and (min-width: 600px) {
+    .card {
+        /* Add shadows to create the "card" effect */
+       
+        background-color: black;
+        max-width: 1vw;
+    
+      }
+  }
+ @media only screen and (min-width: 1200px) { 
+    main {
+        text-align: center;
+    }
+    .card {
+        /* Add shadows to create the "card" effect */
+       
+        background-color: red;
+        max-width: fit-content;
+      }
+
+      h1 {
+          font-size: 5vw;
+          
+
+      }
+      h2 {
+        font-size: 3vw;
+      }
+    p {
+        
+        font-size: 2vw;
+        /*max-width: 75%;*/
+    }
+  }
